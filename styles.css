@@ -97,8 +97,10 @@ form{
 }
 
 .form-row label{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    color: rgb(116, 116, 116);
 }
 
 button{
@@ -109,6 +111,10 @@ button{
     border: none;
     color: white;
     border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(202, 100, 28);
 }
 
 .main-footer a{
@@ -127,28 +133,23 @@ button{
     font-size: 1.5rem;
 }
 
-input[type="email"]:focus:invalid{
-    border-color: red;
-}
-
 input:focus{
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
    
 }
-
  input:focus {
     border: none;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
     outline: none;
   } 
-  
-   input:invalid:focus:not(:placeholder-shown) {
-    border: 2px solid rgb(228, 43, 74)
+   input:invalid:focus:not(:placeholder-shown):required {
+    border: 2px solid rgb(228, 43, 74);
+    padding: 4px 10px;
   }
-  
   input:valid:focus:required,
   input:focus:required:placeholder-shown{
-    border: 2px solid rgb(53, 191, 246) ;
+    border: 2px solid rgb(51, 169, 228) ;
+    padding: 4px 10px;
   }
 
  
