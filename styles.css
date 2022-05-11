@@ -1,5 +1,6 @@
 :root{
     font-size: 16px;
+    --orange: rgb(219, 105, 23);
 
 }
 body{
@@ -60,16 +61,17 @@ img#odin-img{
 }
 
 .main-header{
-    width: 80%;
     font-size: 1.5rem;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
-.main-body{
+.main-body,
+.main-footer,
+.main-header{
     width: 80%;
 }
+
 form{
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,8 +83,7 @@ form{
     flex-direction: column;
     width: min(40%, 300px);
     padding-right: min(2vw,60px);
-    margin-bottom: 40px;
-
+    margin-bottom: 30px;
 }
 
 .form-row input[type="text"],
@@ -94,11 +95,63 @@ form{
     border: 1px solid black;
     border-radius: 3px;
 }
+
 .form-row label{
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
+button{
+    margin-bottom: 40px;
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-footer a{
+    color: var(--orange) ;
+}
+
+.line{
+    background-color: rgb(155, 155, 155);
+    opacity: 40%;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+input[type="email"]:focus:invalid{
+    border-color: red;
+}
+
+input:focus{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+   
+}
+
+ input:focus {
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    outline: none;
+  } 
+  
+   input:invalid:focus:not(:placeholder-shown) {
+    border: 2px solid rgb(228, 43, 74)
+  }
+  
+  input:valid:focus:required,
+  input:focus:required:placeholder-shown{
+    border: 2px solid rgb(53, 191, 246) ;
+  }
+
+ 
 
 
 
