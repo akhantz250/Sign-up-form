@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto:wght@300;500&display=swap');
 :root{
     font-size: 16px;
     --orange: rgb(219, 105, 23);
@@ -9,6 +11,7 @@ body{
     box-sizing: border-box;
     display: flex;  
     flex-direction: row;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bg-img{
@@ -45,6 +48,8 @@ div.banner{
     color: white;
     padding: 20px;
     gap: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
 }
 
 img#odin-img{
