@@ -15,7 +15,7 @@ body{
 }
 
 .bg-img{
-background-image: url(/images/hero-img.jpg);
+background-image: url(./images/hero-img.jpg);
 width: 40vw;
 height: 100vh;
 background-size: cover;
